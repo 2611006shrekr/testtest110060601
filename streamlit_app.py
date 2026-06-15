@@ -3,7 +3,6 @@ import streamlit as st
 st.title("🌙 수면 도우미 프로그램")
 
 st.subheader("1️⃣ 시간 입력하기")
-# 현재 시간을 사용자가 직접 숫자로 입력하도록 변경
 current_hour = st.number_input("현재 시간은 몇 시인가요? (0~23 입력)", min_value=0, max_value=23, step=1)
 bed_time = st.number_input("몇 시에 수면을 취할 예정인가요? (0~23 입력)", min_value=0, max_value=23, step=1)
 wake_time = st.number_input("몇 시에 일어났나요? (0~23 입력)", min_value=0, max_value=23, step=1)
